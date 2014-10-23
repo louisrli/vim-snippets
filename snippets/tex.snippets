@@ -50,13 +50,16 @@ snippet in set membership relation
 snippet fn define domain and codomain of a function
 	${1} : ${2} \to ${3}
 
+snippet bbr mathbb R
+	\mathbb{R}
+# Center
 snippet center center environment
 	\begin{center}
 		${0}
 	\end{center}
 # Align(ed)
 snippet ali align(ed) environment
-	\begin{align${1:ed}}
+	\begin{align${1:*}}
 		\label{eq:${2}}
 		${0}
 	\end{align$1}
@@ -273,10 +276,10 @@ snippet alert alertblock environment
 	\begin{alertblock}{${1:title}}
 	${0}
 	\end{alertblock}
-snippet example exampleblock environment
-	\begin{exampleblock}{${1:title}}
-	${0}
-	\end{exampleblock}
+snippet example example environment
+	\begin{example}
+		${0}
+	\end{example}
 snippet col2 two-column environment
 	\begin{columns}
 		\begin{column}{0.5\textwidth}
